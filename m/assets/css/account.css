@@ -1,0 +1,538 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------
+파일정의 : account
+작성날짜 : 2022-03-31 강지연
+참고사항 : 이 파일은 설정값만 정의한다.
+분류순서 : 기본정책 > 유틸리티 > 사용자정의(컬러, 폰트, 보더, 간격 등)
+속성순서 : 표시 > 위치 > 넘침/흐름 > 크기/간격 > 박스모양 > 폰트/정렬 > 기타
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+## Wrapper
+-------------------------------------------------------------------*/
+
+.contents.account_page {
+  padding: 15px 0 56px;
+}
+.contents.sns_join_page {
+  padding-top: 120px;
+}
+.contents.account_page.join_page,
+.contents.account_page.find_pw_page,
+.contents.account_page.find_pw_c_page,
+.contents.account_page.find_email_page {
+  padding-top: 99px;
+}
+
+
+.account_page .taL {
+  font-size: 1.4rem;
+}
+
+.change_pw_page .taL {
+  margin-bottom: 29px;
+}
+
+.account_page .taC {
+  font-size: 1.4rem;
+  line-height: 1.57;
+}
+
+.account_page .taC.page_ttl {
+  font-size: 1.8rem;
+  margin-bottom: 39px;
+  padding: 0;
+}
+
+.account_pag.login_page .taC.page_ttl {
+  margin-bottom: 26px;
+}
+
+.account_wrap .taC:first-child {
+  margin-bottom: 14px;
+}
+
+.account_wrap .txt_wrap {
+  margin-bottom: 26px;
+}
+
+.account_wrap .txt_wrap strong {
+  font-weight: bold;
+}
+
+.account_page .info_wrap {
+  margin-bottom: 39px;
+}
+
+.change_pw_page .account_form {
+  letter-spacing: -0.025em;
+  display: flex;
+  flex-flow: column;
+}
+
+.change_pw_page .account_form .input_area {
+  margin-bottom: 34px;
+}
+
+.change_pw_page .account_form label {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.change_pw_page .account_form .input_area.check {
+  order: 1;
+}
+
+.account_page.change_pw_page {
+  padding-top: 15px;
+}
+
+.account_page .account_form .state_txt {
+  font-size: 1.3rem;
+  color: #FF3B3B;
+  margin-top: 7px;
+}
+
+
+.input_area.is_error label {
+  font-size: 1.4rem;
+}
+
+.account_wrap .tbl_list {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+  font-size: 1.5rem;
+  margin-bottom: 39px;
+}
+
+.account_wrap .tbl_list dt span {
+  color: #898989;
+}
+
+.account_wrap .tbl_list dd b {
+  font-weight: bold;
+}
+
+
+.account_page.login_page .btn_area.line {
+  margin-top: 26px;
+  border-bottom: 1px solid #212121;
+}
+
+.account_page.login_page .btn_area .btn.find {
+  color: #898989;
+  font-weight: 500;
+  position: relative;
+}
+
+.account_page.login_page .btn_area .btn.find:after {
+  content: '';
+  display: block;
+  background: #898989;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+}
+
+.account_page.login_page .btn_txt.btn_line {
+  width: 100%;
+  margin-bottom: 27px;
+  margin-top: 35px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #212121;
+}
+
+.account_page.login_page .ttl_area {
+  margin-bottom: 0;
+}
+
+.account_page.login_page .join_wrap {
+  margin-top: 42px;
+}
+
+.easy_login_wrap .ttl {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.easy_login_wrap .ic {
+  width: 44px;
+  height: 44px;
+}
+
+.easy_login_wrap .easy_login_list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 22px;
+}
+
+.easy_login_list.line {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 32px 0;
+}
+
+.easy_login_wrap .easy_login_list .login_node {
+}
+
+.easy_login_wrap .ic.naver {
+  background: url("../../assets/images/ic_naver.png");
+  background-size: cover;
+}
+
+.easy_login_wrap .ic.facebook {
+  background: url("../../assets/images/ic_facebook.png");
+  background-size: cover;
+}
+
+.easy_login_wrap .ic.kakao {
+  background: url("../../assets/images/ic_kakao.png");
+  background-size: cover;
+}
+
+.easy_login_wrap .ic.google {
+  background: url("../../assets/images/ic_google.png");
+  background-size: cover;
+}
+
+.easy_login_wrap .ic.apple {
+  background: url("../../assets/images/ic_apple.png");
+  background-size: cover;
+}
+
+.dormancy_page .txt_wrap {
+  margin-bottom: 44px;
+}
+
+.account_wrap.line {
+  margin-bottom: 36px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.find_email_page .btn_area {
+  margin-bottom: 30px;
+}
+
+.find_email_page .join_wrap .btn_area {
+  text-align: center;
+}
+
+.find_email_page .join_wrap .btn_area .btn {
+  position: relative;
+  color: #898989;
+}
+
+.find_email_page .join_wrap .btn_area .btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #898989;
+  bottom: -2px;
+}
+
+
+.account_page .login_wrap .input_box {
+  margin-bottom: 8px;
+}
+
+.input_area.check {
+  margin-top: 14px;
+}
+
+.ttl_area {
+  margin-bottom: 26px;
+}
+
+.ttl_area .ic.ic_complete {
+  background: url("../../assets/images/ic_complete.png");
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.ttl_area .page_ttl.taC {
+  margin-bottom: 12px;
+}
+
+.find_pw_c_page .account_wrap .txt_wrap {
+  margin-bottom: 48px;
+}
+
+.complete_page .tbl_list {
+  margin-bottom: 32px;
+}
+
+.btn_txt_group {
+  margin: 14px 0 50px;
+  display: flex;
+}
+
+.btn_txt_group .btn {
+  font-size: 1.4rem;
+}
+
+.login_page .btn_txt_group .btn:last-child {
+  margin-left: auto;
+}
+
+.btn_txt_group .btn:first-child:after {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 1px;
+  margin: -1px 12px;
+  background: #CCCCCC;
+}
+
+
+.require {
+  font-size: 0;
+}
+
+.require:before {
+  font-size: 1.4rem;
+  content: '*';
+  display: inline-block;
+  color: red;
+}
+
+.account_form.join_wrap .input_area {
+  margin-bottom: 26px;
+}
+
+.account_form.join_wrap .input_area:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.account_form.join_wrap .input_box {
+  margin-bottom: 0px;
+}
+
+.account_form.join_wrap .input_area label {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.account_form.join_wrap .input_area .input_info {
+  font-size: 1.3rem;
+  color: #898989;
+  float: right;
+}
+
+.input_group.age_group.line {
+  border-top: 1px solid #CCCCCC;
+  margin-top: 20px;
+  padding-top: 23px;
+}
+
+.input_group .input_area.type_hor {
+  display: flex;
+}
+
+.input_group .input_area.type_hor .input_box {
+  width: 50%;
+}
+
+.account_form.join_wrap .agree_group .input_area {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.account_form.join_wrap .agree_group .input_area label span {
+  line-height: 20px;
+}
+
+.account_form.join_wrap .agree_group .input_area label span b {
+  font-weight: bold;
+}
+
+.account_form.join_wrap .agree_group .line {
+  width: 100%;
+  display: block;
+  border: 0;
+  background: #cccccc;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+
+.account_page .is_all input[type="radio"]:checked + label:after,
+.account_page .is_all input[type="radio"]:checked + span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: url("../../assets/images/ic_checkbox_active.png");
+}
+
+.account_page .is_all input[type="radio"] + label:before,
+.account_page .is_all input[type="radio"] + span:before {
+  border-radius: 0;
+
+}
+
+.account_page .is_all input[type="radio"]:checked + label:before,
+.account_page .is_all input[type="radio"]:checked + span:before {
+  display: none;
+}
+
+.account_page .btn.w_f.type_round.is_success {
+  border: 1px solid #CCCCCC;
+  display: none;
+}
+
+.account_page .btn.w_f.type_round.is_success .ic {
+  width: 10px;
+  height: 8px;
+  background: url("../../assets/images/ic_check01.png");
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.account_page .input_area.check.is_all .input_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account_page .input_area.check.is_all label {
+  margin-bottom: 16px;
+}
+
+.account_page .input_area.check.is_all .input_box .has_underL {
+  color: #212121;
+}
+
+.account_page .input_area.check.is_all .input_box .has_underL:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #212121;
+}
+
+
+.terms_modal_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: none;
+}
+
+.terms_modal_wrap.is_active {
+  display: block;
+}
+
+.terms_modal_wrap .terms_modal_inner {
+  background: #fff;
+  height: 100%;
+}
+
+.terms_modal_wrap .terms_modal_inner:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 1px solid #CCCCCC;
+  opacity: 0.35;
+}
+
+.terms_modal_wrap .terms_modal_inner .modal_ttl {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 17px 0;
+}
+
+.terms_modal_wrap .terms_modal_inner .terms_txt {
+  height: calc(100% - 160px);
+  overflow: auto;
+  padding-bottom: 100px;
+  padding: 0 15px;
+}
+
+.terms_modal_wrap .terms_modal_inner p {
+  color: #5A5A5A;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.terms_modal_wrap .terms_modal_inner p b {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.terms_modal_wrap .terms_modal_inner .terms_txt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.terms_modal_wrap .terms_modal_inner .terms_txt::-webkit-scrollbar-thumb {
+  background-color: #CCCCCC;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.terms_modal_wrap .btn.close_btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+.terms_modal_wrap .btn.close_btn .ic {
+  background: url("../../assets/images/ic_btn_close.png");
+  width: 100%;
+  height: 100%;
+}
+
+.account_form.join_wrap .agree_group .input_area.is_all {
+  margin-bottom: 32px;
+}
+
+.account_page.login_page.join_form_page .join_wrap {
+  margin-top: 0;
+}
+
+.join_wrap .input_area.line {
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+.find_pw_page .input_area {
+  margin-bottom: 32px;
+}
+
+.join_c_page .account_wrap .tbl_list {
+  align-items: center;
+  flex-flow: column;
+}
+
+.join_c_page .account_wrap .tbl_list dt {
+  margin-bottom: 8px;
+}

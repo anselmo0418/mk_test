@@ -1,0 +1,16 @@
+
+.latest_news_list .news_node:first-child .news_item {
+    padding-top: 0;}
+
+.news_sec.best_view_news_sec {
+    margin-top: 30px;}
+
+.news_home .mk_body_news_group{
+    margin-top: 30px; }
+
+.newsletter_page .newsletter_list .news_node {
+    margin-bottom: 4rem;
+}
+.newsletter_page .newsletter_list .txt_area {
+    padding-right: 80px;
+}

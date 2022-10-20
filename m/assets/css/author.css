@@ -1,0 +1,335 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------
+파일정의 : Author CSS
+작성날짜 : 2022-03-24 김하연
+참고사항 : 이 파일은 설정값만 정의한다.
+분류순서 : 기본정책 > 유틸리티 > 사용자정의(컬러, 폰트, 보더, 간격 등)
+속성순서 : 표시 > 넘침/흐름 > 위치 > 크기/간격 > 박스모양 > 폰트/정렬 > 기타
+-------------------------------------------------------------------*/
+.author_node {
+  position: relative;
+}
+
+.author_rank_sec {
+  overflow: hidden;
+}
+
+.author_rank_wrap {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: visible;
+}
+
+.author_rank_wrap em {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.author_rank_wrap em b {
+  font-weight: bold;
+}
+
+.author_rank_wrap .author_item {
+  background: #1d1d1d;
+}
+
+.author_info_group {
+  padding: 18px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.author_info_group .thumb_area {
+  margin-right: 16px;
+}
+
+.author_info .name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.author_info .mail {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #FF7A00;
+}
+
+.author_info .mail:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #FF7A00;
+  margin-top: 3px;
+}
+
+.author_item .related_news_list {
+  padding: 20px 15px;
+  font-size: 1.4rem;
+  line-height: 1.42;
+  box-sizing: content-box;
+}
+
+.author_item .related_news_wrap li,
+.author_item .author_info .mail {
+  position: relative;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.author_node .author_item {
+  pointer-events: none;
+}
+
+.author_item .related_news_list li + li {
+  margin-top: 12px;
+}
+
+.author_item .related_news_list .ic_related {
+  top: 4px;
+}
+
+
+.author_page .related_news_list .related_news_item {
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+}
+
+.author_page .related_news_list .related_news_item + .related_news_item {
+  margin-top: 14px;
+}
+
+.author_page .author_wrap .author_sec .author_node .author_item {
+  padding: 18px 15px 15px;
+}
+
+.author_page .author_wrap .author_item .related_news_list {
+  position: relative;
+  z-index: 3;
+  height: auto;
+  padding: 0;
+  margin-top: 18px;
+  margin-left: -78px;
+  pointer-events: auto;
+}
+
+.author_page .author_wrap .related_news_list .related_news_item {
+  color: #898989;
+
+}
+
+.author_rank_sec + .author_sec {
+  margin-top: 24px;
+}
+
+.author_rank_sec + .author_sec .author_wrap {
+  padding-top: 24px;
+  border-top: 1px solid #212121;
+}
+
+.author_rank_sec + .author_sec .author_wrap .btn_area {
+  margin-top: 18px;
+}
+
+.author_sec .author_node + .author_node {
+  margin-top: 8px;
+}
+
+.author_sec .author_node .author_item {
+  border: 1px solid #CCCCCC;
+  padding: 18px 15px;
+}
+
+.basic_info_group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.author_page .thumb_area {
+  order: 1;
+}
+
+.author_page .author_info {
+  order: 2;
+}
+
+.basic_info_group .thumb_area {
+  margin-right: 16px;
+}
+
+.author_sec .author_item .summary {
+  font-size: 1.2rem;
+  color: #898989;
+  margin-top: 12px;
+  line-height: 1.42;
+  min-height: 2.84em;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.author_sec .author_item .name {
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.author_list_page .btn.basic {
+  border: 1px solid #CCCCCC;
+}
+
+.author_list_page .author_info .name {
+  color: #212121;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.author_list_page .author_info .summary {
+  font-size: 1.2rem;
+  color: #898989;
+  margin-top: 12px;
+  line-height: 1.42;
+}
+
+.author_list_page .latest_news_sec {
+  margin-top: 26px;
+}
+
+.author_list_page .latest_news_list .news_node:first-child .news_item {
+  padding-top: 0;
+}
+
+.belong {
+  color: #898989;
+  font-size: 1.3rem;
+  display: block;
+  letter-spacing: -0.025em;
+  margin-bottom: 6px;
+}
+
+.author_rank_wrap .belong {
+  color: #E6E6E6;
+}
+
+.author_list_page .author_wrap .basic_info_group {
+  padding: 20px 0;
+}
+
+.author_list_page .thumb_area {
+  position: relative;
+}
+
+.author_list_page .thumb_area .thumb_num {
+  position: absolute;
+}
+
+.basic_info_group + .news_info_group {
+  border-top: 1px solid #ccc;
+}
+
+.news_info_group {
+  position: relative;
+  padding: 16px 0;
+}
+
+.news_info_group .label_info {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.news_info_group .label_info dd,
+.news_info_group .label_info dt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.news_info_group .label_info dt {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+}
+
+.news_info_group .label_info dd {
+  font-size: 1.5rem;
+  color: #212121;
+  margin-left: 6px;
+}
+
+.news_info_group .label_info dd b {
+  font-weight: 700;
+}
+
+.news_info_group .label_info + .label_info:before {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, .2);
+  vertical-align: middle;
+  margin: 0 16px;
+}
+
+.news_info_group .btn_area {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+aside.author_info_sec + .highlight_news_sec {
+  margin-top: 25px;
+}
+
+.highlight_news_sec .news_node .txt_area {
+  margin-top: 11px;
+  padding-bottom: 14px;
+}
+
+.highlight_news_sec .news_node + .news_node {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.author_page .order_btn {
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 500;
+  justify-content: flex-end;
+  color: #888888;
+  margin-bottom: 14px;
+}
+
+.author_page .order_btn li:first-child:after {
+  margin: -1px 12px;
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #cccccc;
+}
+
+.author_page .order_btn li.is_active {
+  font-weight: bold;
+  color: #212121;
+}

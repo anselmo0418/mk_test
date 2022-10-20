@@ -1,0 +1,55 @@
+
+/* 기존 css 가져옴 */
+.coin_list{overflow:hidden; border-left:1px solid #e6e6e6; border-top:1px solid #e6e6e6}
+.coin_list li{float:left; width:125px; height:110px; border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6}
+.coin_list li a:link, .coin_list li a:hover, .coin_list li a:visited{text-decoration:none}
+.coin_list li .coin_link{display:block; height:110px; text-align:center; background-color:#fff}
+.coin_list li .coin_icon{display:block; padding:28px 0 11px; width:100%; height:32px; text-align:center}
+.coin_list li .coin_icon img{height:32px}
+.coin_list li .coin_tit{display:block; font-size:15px; font-weight:normal; color:#909090; letter-spacing:-0.03em}
+.coin_list li.is_active .coin_link{display:block; height:110px; text-align:center; background-color:#f6f6f6}
+.coin_list li.is_active .coin_icon{display:block; padding:28px 0 11px; width:100%; height:32px; text-align:center}
+.coin_list li.is_active .coin_icon img{height:32px}
+.coin_list li.is_active .coin_tit{display:block; font-size:16px; color:#222; font-weight:bold; letter-spacing:-0.03em}
+.coin_list li.is_active .coin_stit{display:block; font-size:13px; font-weight:bold; line-height:18px; color:#222}
+
+.tbl_coin{width: 100%; font-size:14px; border-top:1px solid #a3a3a3; border-right:1px solid #e6e6e6; text-align:center}
+.tbl_coin caption{display:none}
+.tbl_coin th{padding:14px 0; border-left:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; background-color:#f6f6f6; text-align:center;}
+.tbl_coin td{position:relative; padding:10px 0 7px; vertical-align:middle; border-left:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6}
+.tbl_coin .time_info{display:block; font-size:11px; font-weight:normal; color:#888; letter-spacing:normal}
+.tbl_coin .name{padding-left:32px; color:#000; text-align:left}
+.price_fluc_up{color:#eb040c}
+.ico_up{background:url(//img.mk.co.kr/mtech/ico_factor_up.png) no-repeat 0 6px; padding-left:13px}
+.rate_fluc_up{padding-right:8px; color:#eb040c}
+.price_fluc_down{color:#0c58d6; text-align:center}
+.ico_down{background:url(//img.mk.co.kr/mtech/ico_factor_down.png) no-repeat 0 6px; padding-left:13px}
+.rate_fluc_down{padding-right:8px; color:#0c58d6}
+.tbl_coin td .btn_chart{display:block; position:absolute; top:14px; right:10px; padding-top:8px; width:25px; height:20px; text-align:center}
+.tbl_info{padding:10px 0 30px; font-size:12px; color:#888; line-height:19px; border-bottom:1px solid #e7e7e7}
+
+.chart_area_wrap{overflow:hidden; width:100%; height:295px}
+.chart_area_wrap .chart_info{float:left; width:122px; height:294px; border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6 !important}
+.chart_area_wrap .chart_area{position:relative; float:left; width:632px; height:294px; border-bottom:1px solid #e6e6e6 !important}
+.chart_area_wrap .chart_info ul{padding:73px 0 0 22px}
+.chart_area_wrap .chart_info ul li{margin-bottom:25px; font-size:13px; text-align:left}
+.chart_area_wrap .chart_info ul li span{display:block; font-weight:bold}
+.chart_area_wrap .chart_info ul li .price_up{color:#eb040c}
+.chart_area_wrap .chart_info ul li .price_down{color:#0c58d6}
+.chart_area_wrap .chart_info ul li .volume{color:#222}
+.chart_area_wrap .chart_area .term{position:absolute; top:20px; left:110px; width:450px; height:25px}
+.chart_area_wrap .chart_area .term li{float:left; margin-right:6px; width:95px; height:23px; text-align:center; background-color:#f6f6f6; border:1px solid #e6e6e6; font-size:13px; line-height:23px}
+.chart_area_wrap .chart_area .term li a{color:#888}
+.chart_area_wrap .chart_area .term li.on{font-weight:bold; border:1px solid #989898}
+.chart_area_wrap .chart_area .term li.on a{color:#222}
+.chart_area_wrap .chart_area .chart_graph{position:absolute; top:60px; left:5px; width:620px; height:230px}
+.chart_area_wrap .chart_area .chart_graph img{height:220px}
+
+.chart_area_wrap2{overflow:hidden; width:100%; height:70px; border-bottom:1px solid #e6e6e6}
+.chart_area_wrap2 .chart_info{width:100%; height:70px}
+.chart_area_wrap2 .chart_info ul{padding:22px 0 0 240px}
+.chart_area_wrap2 .chart_info ul li{float:left; width:125px; font-size:13px; text-align:center}
+.chart_area_wrap2 .chart_info ul li span{display:block; font-weight:bold}
+.chart_area_wrap2 .chart_info ul li .price_up{color:#eb040c}
+.chart_area_wrap2 .chart_info ul li .price_down{color:#0c58d6}
+.chart_area_wrap2 .chart_info ul li .volume{color:#222}

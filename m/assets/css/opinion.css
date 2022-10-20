@@ -1,0 +1,284 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------
+파일정의 : Layout
+작성날짜 : 2022-03-11 강지연
+참고사항 : 이 파일은 설정값만 정의한다.
+분류순서 : 기본정책 > 유틸리티 > 사용자정의(컬러, 폰트, 보더, 간격 등)
+속성순서 : 표시 > 넘침/흐름 > 위치 > 크기/간격 > 박스모양 > 폰트/정렬 > 기타
+-------------------------------------------------------------------*/
+
+/* opinion */
+.opinion_page {
+  padding-top: 20px;
+}
+
+.opinion_page.opinion_name {
+  padding-top: 25px;
+}
+
+.opinion_page .txt_area .cate {
+  color: #083E6E;
+}
+
+.opinion_page .type_banner {
+  background: #192F52;
+  border-bottom: 0;
+}
+
+.opinion_page .txt_area .news_ttl {
+  height: auto;
+  padding-right: 0;
+}
+
+.opinion_page .info_group {
+  display: block;
+  text-align: right;
+  font-size: 0;
+}
+
+.opinion_page.opinion_name .info_group {
+  text-align: left;
+}
+
+.opinion_page .info_group p {
+  float: none;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.type_banner .txt_area .news_ttl {
+  min-height: 3em;
+}
+
+.opinion_home .headline_news_list .news_node + .news_node {
+  border-bottom: 1px solid #ccc;
+}
+
+.opinion_home .headline_news_list .news_ttl {
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.38;
+  font-size: 1.8rem;
+  height: auto;
+  padding-right: 0;
+}
+
+.opinion_home .headline_news_list .type_bg .news_ttl {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.opinion_home .headline_news_list .cate {
+  color: #083E6E;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.opinion_home .headline_news_list .type_bg .cate {
+  color: #A3C0E3;
+}
+
+.opinion_home .headline_news_list .type_bg .info_group {
+  color: #BEBEBE;
+  margin-top: 22px;
+}
+
+.opinion_home .headline_news_list .type_bg .info_group p + p:before {
+  background-color: #BEBEBE;
+}
+
+.opinion_home .headline_news_list .news_node .news_item.type_bg {
+  padding: 20px 15px;
+}
+
+.opinion_home .headline_news_list .news_node .news_item {
+  padding: 18px 0;
+  /*margin-top: 18px;*/
+}
+.opinion_home .headline_news_list .news_node:first-child .news_item {
+  margin-top: 0;}
+.opinion_home .headline_news_list .news_node .news_item.type_thumb {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.opinion_home .headline_news_list .type_thumb .thumb_area:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .1));
+  z-index: 2;
+}
+
+.opinion_home .headline_news_list .type_thumb .txt_area {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 2;
+}
+
+.opinion_home .headline_news_list .type_thumb .txt_area .news_ttl {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.news_sec.today_column_sec {
+  overflow: hidden;
+}
+
+.today_column_wrap.swiper-container {
+  overflow: visible;
+}
+
+.today_column_sec .today_column_list .news_node {
+  width: 84.5454%;
+  min-width: 279px;
+}
+.opinion_home .today_column_sec .today_column_list .news_item {
+  position: relative;
+  border: 1px solid #cccccc;
+  padding: 34.364% 20px 20px;
+  box-sizing: border-box;
+}
+
+
+.opinion_home .today_column_sec .today_column_list .news_item .thumb_area {
+  float: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  min-width: 72px;
+  min-height: 72px;
+}
+
+.opinion_home .today_column_list .cate {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  margin-bottom: 6px;
+}
+
+.opinion_home .today_column_list .news_ttl {
+  display: block;
+  height: auto;
+  padding-right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.opinion_home .today_column_list .news_desc {
+  font-size: 1.4rem;
+  color: #5A5A5A;
+  line-height: 1.42;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.opinion_home .today_column_list .info_group {
+  margin-top: 17px;
+}
+
+.opinion_home .thumb_area.type_circle {
+  margin-top: 0;
+}
+
+.name_column_list .txt_area .cate {
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.name_column_list .txt_area .news_ttl {
+  margin-top: 6px;
+  height: auto;
+  padding-right: 0;
+}
+
+.opinion_home .list_sec .box_sec .label_list_wrap {
+  border: 1px solid #cccccc;
+  padding: 18px 16px;
+}
+
+.opinion_home .list_sec .label a {
+  display: inline-block;
+  padding: 0 13px;
+  line-height: 30px;
+  background: #000;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.label_list_wrap + .label_list_wrap {
+  margin-top: 15px;
+}
+
+.label_list_node + .label_list_node {
+  margin-top: 24px;
+}
+
+.opinion_home .label_list_wrap dt {
+  margin-bottom: 16px;
+}
+
+.opinion_home .label_list_wrap dd {
+  position: relative;
+  margin: -8px 0 -8px -25px;
+  padding-left: 4px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.opinion_home .label_list_wrap dd:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  bottom: 0;
+  z-index: 1;
+  width: 3px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.opinion_home .label_list_wrap dd span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 0;
+}
+
+.opinion_home .label_list_wrap dd span:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: rgba(90, 90, 90, .6);
+  margin: 0 12px;
+}
+
+.opinion_home .headline_news_list .type_bg {
+  background: #073053;
+}
+
+.opinion_name .info_group,
+.opinion_name .name_column_list .txt_area .news_ttl {
+  margin-top: 4px;
+}
+
+.opinion_name .name_column_list .txt_area .cate {
+  margin-bottom: 4px;
+}
+
+.opinion_home .name_column_sec .type_underline .sec_ttl,
+.opinion_home .best_view_news_sec .type_underline .sec_ttl {
+  font-size: 1.8rem;
+}
