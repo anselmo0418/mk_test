@@ -313,6 +313,7 @@
   background: var(--c-bg);
   box-shadow: -5px 0 5px var(--c-bg);
 }
+
 @media (prefers-color-scheme: dark) {
   [data-dark="true"] .c_point {
     color: #ff8a1f !important;
@@ -320,4 +321,177 @@
   [data-dark="true"] .timeline_news_wrap .timeline_ttl {
     color: #ff8a1f;
   }
+}
+
+/* comment */
+@media (prefers-color-scheme: dark) {
+  [data-dark=true] .material-icons {
+    color: #fff;
+  }
+  [data-dark=true] .material-icons-outlined {
+    color: #fff;
+  }
+  [data-dark=true] .hw_btn.is_active {
+    color: #fff;
+  }
+  [data-dark=true] .hw_btn {
+    color: #a7a7a7;
+  }
+  [data-dark=true] .cmm_wrap .cmt textarea {
+    background: #212121;
+  }
+  [data-dark=true] .news_comment_head.login .cmt textarea {
+    height: 90px;
+    background: #212121;
+  }
+
+  [data-dark=true].news_cmt_re .cmt_reply_list {
+    background: #212121;
+  }
+  [data-dark=true] .news_cmt_re .cmt_reply_list .cmt_reply_node {
+    background: #303030;
+  }
+  [data-dark=true] .pop {
+    background-color: #212121;
+  }
+  [data-dark=true] .pop .news_cmm_list .news_cmt_item .news_reply_wrap {
+    color:#fff
+  }
+  [data-dark=true] .news_cmm_list .layer_popup {
+    color: #212121;
+  }
+  [data-dark=true] .btn.basic {
+    background: #fff;
+    color: #212121;
+  }
+  [data-dark=true] .material-icons-outlined {
+    color: #fff;
+  }
+  [data-dark=true] .material-icons {
+    color: #fff;
+  }
+  [data-dark=true] .news_cmm_list .lik_hat .lk_btn .lk.active{
+    width: 23px;
+    height: 23px;
+    background-image: url(//img.mk.co.kr/main/2022/dark_like.png);
+    background-size: cover;
+    float: left;
+  }
+  [data-dark=true] .news_cmm_list .lik_hat .hate_btn .ht.active {
+    width: 23px;
+    height: 23px;
+    background-image: url(//img.mk.co.kr/main/2022/dark_dislike.png);
+    background-size: cover;
+    float: left;
+  }
+  [data-dark=true] .news_comment_head.login .bottom_line {
+    background: #212121;
+  }
+  [data-dark=true] .news_cmt_re .cmt_reply_list {
+    background: #303030;
+  }
+  [data-dark=true] .news_cmt_re {
+    background: #303030;
+  }
+
+  [data-dark=true] .news_cmt_re .cmt_reply_list .cmt_reply_node .writer_info .time_area {
+    color: #888888;
+  }
+
+  [data-dark=true] .news_cmt_re .cmt_reply textarea {
+    background: #303030;
+  }
+
+  [data-dark=true] .top_button {
+    color: #fff;
+  }
+  [data-dark=true] .btn.black {
+    background-color: #fff;
+    color: #212121;
+  }
+  [data-dark=true] .account_sec .cmm_menu {
+    border-top: 1px solid #cccccc;
+  }
+}
+/* comment */
+
+/*0927 add */
+[data-dark=true] .linkline .text_link .pd20 .link_tit  {
+  color: var(--c-bg);
+}
+[data-dark=true] .linkline2 .big_link .pd20 .link_tit {
+  color: var(--c-bg);
+}
+[data-dark=true] .textbox_gray {
+  color: var(--c-bg);
+}
+[data-dark=true] .textbox_blue  {
+  color: var(--c-bg);
+}
+[data-dark=true] .textbox_yellow  {
+  color: var(--c-bg);
+}
+[data-dark=true] .textbox_red   {
+  color: var(--c-bg);
+}
+[data-dark=true] .textbox_green  {
+  color: var(--c-bg);
+}
+[data-dark=true] .table1 th  {
+  color: var(--c-bg);
+}
+[data-dark=true] .quote_b .quote_bx	 {
+  color: var(--c-bg);
+}
+  [data-dark=true] .thum_figure_tit {
+    color: #fff;
+  }
+ [data-dark=true] .midtitle_text {
+   color: var(--c-txt)
+ }
+
+
+[data-dark=true] .content-textbox[data-attribute="01"] {
+  color: var(--c-bg);
+}
+[data-dark=true] .content-textbox[data-attribute="02"] {
+  color: var(--c-bg);
+}
+[data-dark=true] .content-textbox[data-attribute="03"] {
+  color: var(--c-bg);
+}
+[data-dark=true] .content-textbox[data-attribute="04"] {
+  color: var(--c-bg);
+}
+[data-dark=true] .content-textbox[data-attribute="05"] {
+  color: var(--c-bg);
+}
+
+
+[data-dark=true] .quote_b {
+  background: transparent;
+}
+[data-dark=true] .quote_b:after {
+  border-color: #222222 transparent;
+}
+[data-dark=true] .dbnum .numon {
+  background-color: #c2c2c2;
+}
+[data-dark=true] .dbnum .numoff {
+  background-color: #666666;
+}
+[data-dark=true] .tab_dot span {
+  background-color: #c2c2c2;
+}
+
+
+[data-dark=true] .list_style li {
+  color: #333333
+}
+
+[data-dark=true] .tb_p_info tbody tr th{
+color:#444;  background:#e0e0e0;
+}
+[data-dark=true] .tb_p_info tbody tr td{
+color:#444; background:#eee;
 }
