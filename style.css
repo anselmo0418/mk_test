@@ -634,6 +634,18 @@
   margin-right: 14px;
 }
 
+a11y-hidden{
+  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0); // 크롬, 파이어폭스, 오페라
+  clip: rect(0 0 0 0); // IE 6, 7
+  clip: rect(0,0,0,0); // 그 이후 IE
+}
+
+
 /*  ## Special News  */
 .main_page .special_news_wrap:after {
   display: block;
