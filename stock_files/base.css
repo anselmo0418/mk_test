@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+color-scheme: light only;
+}
+
+
 /* ===== Margin-top ===== */
 .mt-5 {
 	margin-top: 5px;
@@ -1077,7 +1082,7 @@ button::-moz-focus-inner {
     padding: 0;
 }
 
-.r { 
+.r {
     text-align:right;
 }
 
@@ -1190,7 +1195,7 @@ button::-moz-focus-inner {
 }
 
 /* width */
-.grid > .col.col_1 { 
+.grid > .col.col_1 {
     width: 8.33333333%;
 }
 
@@ -1276,7 +1281,7 @@ button::-moz-focus-inner {
     z-index: 0;
 }
 
-/* ===== Page Scroll ===== */ 
+/* ===== Page Scroll ===== */
 .is_scrollFix {
     position: fixed;
     left: 0;
@@ -1285,7 +1290,7 @@ button::-moz-focus-inner {
     overflow: hidden;
 }
 
-/* ===== Align - Text ===== */ 
+/* ===== Align - Text ===== */
 .vaT {
     vertical-align: top !important;
 }
@@ -1595,4 +1600,3 @@ select::-ms-expand {
 #TC_billboard {
 	text-align: center;
 }
-
