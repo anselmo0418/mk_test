@@ -2,11 +2,15 @@
 <head>
 <title>트위터 이동 예시</title>
 <script>
+// 트위터 앱 설치 여부에 따라 리다이렉트
 // 트위터 앱 스킴
 const twitterScheme = "twitter://";
 
 // 트위터 홈페이지 URL
 const twitterWebUrl = "https://twitter.com/";
+
+// 현재 URL
+const currentUrl = window.location.href;
 
 // 앱 설치 여부 확인
 function isTwitterAppInstalled() {
@@ -37,13 +41,12 @@ function redirectToTwitter() {
   }
 }
 
-// 페이지 로딩 후 3초 뒤에 리다이렉트 함수 실행
-window.onload = function() {
-  setTimeout(redirectToTwitter, 3000);
-};
+
+// 페이지 로딩 시 리다이렉트
+window.onload = redirectToTwitter;
 </script>
 </head>
 <body>
-<h1>3초 후에 트위터로 이동합니다.</h1>
+<h1>트위터 앱이 설치되어 있으면 앱으로 이동하고, 설치되어 있지 않으면 웹페이지로 이동합니다.</h1>
 </body>
 </html>
