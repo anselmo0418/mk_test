@@ -1,52 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<title>트위터 이동 예시</title>
-<script>
-// 트위터 앱 설치 여부에 따라 리다이렉트
-// 트위터 앱 스킴
-const twitterScheme = "twitter://";
-
-// 트위터 홈페이지 URL
-const twitterWebUrl = "https://twitter.com/";
-
-// 현재 URL
-const currentUrl = window.location.href;
-
-// 앱 설치 여부 확인
-function isTwitterAppInstalled() {
-  // iOS
-  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-    return window.navigator.canOpenURL(twitterScheme);
-  }
-  // Android
-  else if (navigator.userAgent.match(/Android/i)) {
-    const intent = document.createElement("a");
-    intent.href = twitterScheme;
-    return intent.href === currentUrl;
-  }
-  // 기타 플랫폼
-  else {
-    return false;
-  }
-}
-
-// 리다이렉트 함수
-function redirectToTwitter() {
-  if (isTwitterAppInstalled()) {
-    // 앱 설치되어 있으면 앱 실행
-    window.location.href = twitterScheme;
-  } else {
-    // 앱 설치되어 있지 않으면 웹페이지로 이동
-    window.location.href = twitterWebUrl;
-  }
-}
-
-
-// 페이지 로딩 시 리다이렉트
-window.onload = redirectToTwitter;
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트위터 앱 실행</title>
 </head>
 <body>
-<h1>트위터 앱이 설치되어 있으면 앱으로 이동하고, 설치되어 있지 않으면 웹페이지로 이동합니다.</h1>
+  <h1>트위터 앱 실행</h1>
+  <p>이 페이지를 접속하면 3초 후에 트위터 앱이 실행됩니다.</p>
+  <script>
+    // 트위터 앱 스킴
+    const twitterScheme = "twitter://";
+
+    // 페이지 로딩 후 3초 뒤에 트위터 앱 실행
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.href = twitterScheme;
+      }, 3000);
+    };
+  </script>
 </body>
 </html>
