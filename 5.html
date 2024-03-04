@@ -1,16 +1,23 @@
 <html>
 <head>
-<title>리다이렉트 예시</title>
+<title>트위터 이동 예시</title>
 <script>
-window.onload = function() {
-  // 3초 후에 https://mk.co.kr 로 리다이렉트
-  setTimeout(function() {
-    window.location.href = "twitter://signup";
-  }, 3000);
-};
+// 트위터 앱 설치 여부에 따라 리다이렉트
+function redirectToTwitter() {
+  if (isTwitterAppInstalled()) {
+    // 앱 설치되어 있으면 앱 실행
+    window.location.href = "twitter://";
+  } else {
+    // 앱 설치되어 있지 않으면 웹페이지로 이동
+    window.location.href = "https://twitter.com/";
+  }
+}
+
+// 페이지 로딩 시 리다이렉트
+window.onload = redirectToTwitter;
 </script>
 </head>
 <body>
-<h1>3초 후에 트위터 회원가입으로 이동합니다.</h1>
+<h1>트위터 앱이 설치되어 있으면 앱으로 이동하고, 설치되어 있지 않으면 웹페이지로 이동합니다.</h1>
 </body>
 </html>
