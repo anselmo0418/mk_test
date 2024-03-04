@@ -12,7 +12,7 @@ function redirectToNaver() {
     if (/android/i.test(userAgent)) { // 안드로이드 기기
         window.location.href = 'intent://www.naver.com#Intent;scheme=https;package=com.nhn.android.search;end';
     } else if (/iPad|iPhone|iPod/i.test(userAgent)) { // iOS 기기
-        window.location.href = 'naversearch://';
+        window.location.href = 'naversearchapp://default?version=1';
     } else { // 기타 기기 또는 네이버 앱이 없는 경우
         window.location.href = 'https://www.naver.com';
     }
