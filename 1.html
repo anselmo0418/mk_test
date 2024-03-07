@@ -128,23 +128,18 @@ googletag.enableServices();
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
-  function getOgTitle() {
-    // og:title 메타태그 가져오기
-    const ogTitle = document.querySelector('meta[property="og:title"]');
+function getOgTitleOrDocumentTitle() {
+  // og:title 메타태그를 찾습니다.
+  const ogTitle = document.querySelector('meta[property="og:title"]');
 
-    // og:title 값이 존재하지 않으면 빈 문자열 반환
-    if (!ogTitle) {
-      return "";
-    }
+  // 메타태그가 존재하면 그 content 값을 반환합니다.
+  // 그렇지 않으면, document.title을 반환합니다.
+  return ogTitle ? ogTitle.content : document.title;
+}
 
-    // og:title 값 반환
-    return ogTitle.getAttribute("content");
-  }
+// 함수를 호출하고 그 결과를 콘솔에 출력합니다.
+console.log(getOgTitleOrDocumentTitle());
 
-  const ogTitle = getOgTitle();
-
-  // ogTitle 변수에는 웹페이지의 og:title 값이 저장됩니다.
-  console.log(ogTitle);
 </script>
 
 <div class="skipNav">
